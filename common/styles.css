@@ -85,4 +85,6 @@ a, a:hover, a:visited {
 
 ul li {
     padding-bottom: 10px;
+    color: #434141;
+    line-height: 1.5;
 }

@@ -5,95 +5,381 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuki Ueda - Personal Homepage</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fdffff;
-            display: flex;
-        }
-
-        header {
-            background-color: #171717;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            text-align: left;
-        }
-
-        aside {
-            width: 240px;
-            /* Set the width of the sidebar */
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            /* Add a shadow to the sidebar */
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 30px;
-        }
-
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 200%;
-            color: #f5f0f0;
-            margin-top: 50px;
-            margin-bottom: 60px;
-            margin-left: 20px;
-        }
-
-        h2 {
-            font-size: 260%;
-            color: #121111;
-            margin-top: 30px;
-            margin-bottom: 60px;
-            margin-left: 10px;
-        }
-
-        h3 {
-            color: #000000;
-            margin-top: 30px;
-            margin-bottom: 60px;
-            margin-left: 20px;
-
-        }
-
-        p {
-            color: #434141;
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: #fff;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 15px;
-            /* Add space between menu items */
-            margin-left: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="common/styles.css">
 </head>
 
 <body>
-    test
+    <script>
+        // Fetch and inject the entire side content (including styles)
+        fetch('common/side.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('afterbegin', html);
+            })
+            .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+    <main>
+        <p class="page_title">
+            論文, 発表 / Papers, Talks
+        </p>
+        <section>
+            <p class="section_title">
+                論文 / Papers
+            </p>
+            <p>
+                *: corresponsing author
+            <p>
+            <p style="font-size:22px">
+                査読付き / Peer-reviewed
+            </p>
+            <p>
+                Published
+            </p>
+            <ul>
+                <li>
+                    B. Li*, M. Shu and Y. Ueda.
+                    <i>
+                        Analysis of fully discrete finite element methods for 2D Navier-Stokes equations with critical
+                        initial data.
+                    </i>
+                    <a href="https://www.esaim-m2an.org/">
+                        ESAIM: Mathematical Modelling and Numerical Analysis (ESIAM:M2AN)
+                    </a>,
+                    Volume 56 (2022) 2105--2139
+                    [<a href="https://www.esaim-m2an.org/articles/m2an/abs/2022/06/m2an210118/m2an210118.html">
+                        Journal
+                    </a>]
+                </li>
+                <li>
+                    Y. Ueda*, Y. Otoguro, K. Takizawa and T. E. Tezduyar.
+                    <i>
+                        Element-Splitting-Invariant Local-Length-Scale Calculation in B-Spline Meshes for Complex
+                        Geometries.
+                    </i>
+                    <a href="https://www.worldscientific.com/worldscinet/m3as">
+                        Mathematical Models and Methods in Applied Sciences (M3AS)
+                    </a>,
+                    Vol30, No.11 (2020) 2139--2174
+                    [<a href="https://www.worldscientific.com/doi/abs/10.1142/S0218202520500402">
+                        Journal
+                    </a>]
+                </li>
+                <li>
+                    B. Li*, Y. Ueda and G. Zhou.
+                    <i>
+                        A second-order stabilization method for linearizing and decoupling nonlinear parabolic systems.
+                    </i>
+                    <a href="https://epubs.siam.org/">
+                        SIAM Journal on Numerical Analysis (SIAM J. Numer. Anal.)
+                    </a>,
+                    Vol.58, Issue 5 (2020) 2736--2763
+                    [<a href="https://epubs.siam.org/doi/abs/10.1137/19M1296136">
+                        Journal
+                    </a>]
+                </li>
+                <li>
+                    Y. Giga and Y. Ueda*.
+                    <i>
+                        Numerical computations of split Bregman method for fourth order total variation flow.
+                    </i>
+                    <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">
+                        Journal of Computational Physics (J. Comput. Phys.)
+                    </a>,
+                    Vol405 (2020) 109114--109137
+                    [<a href="https://www.sciencedirect.com/science/article/pii/S0021999119308198?via%3Dihub">
+                        Journal
+                    </a>]
+                </li>
+                <li>
+                    K. Takizawa*, Y. Ueda and T. E. Tezduyar.
+                    <i>
+                        A node-numbering-invariant directional length scale for simplex elements.
+                    </i>
+                    <a href="https://www.worldscientific.com/worldscinet/m3as">
+                        Mathematical Models and Methods in Applied Sciences (M3AS)
+                    </a>,
+                    Vol.29, No.14 (2019) 2719--2753
+                    [<a href="https://www.worldscientific.com/doi/abs/10.1142/S0218202519500581">
+                        Journal
+                    </a>]
+                </li>
+                <li>
+                    Y. Ueda* and N. Saito.
+                    <i>
+                        Stability and error estimates for the successive-projection technique with B-splines in time.
+                    </i>
+                    <a href="https://www.sciencedirect.com/journal/journal-of-computational-and-applied-mathematics">
+                        Journal of Computational and Applied Mathematics (J. Comput. Appl. Math.)
+                    </a>,
+                    Vol.358 (2019) 266--278
+                    [<a href="https://www.sciencedirect.com/science/article/pii/S0377042719301517">
+                        Journal
+                    </a>]
+                </li>
+                <li>
+                    Y. Ueda* and N. Saito.
+                    <i>
+                        The inf-sup condition and error estimates of the Nitsche method for evolutionary
+                        diffusion-advection-reaction equations.
+                    </i>
+                    <a href="https://link.springer.com/journal/13160">
+                        Japan Journal of Industrial and Applied Mathematics (JJIAM)
+                    </a>,
+                    Vol.36, Issue1 (2019) 209--238
+                    [<a href="https://link.springer.com/article/10.1007/s13160-018-0338-4">
+                        Journal
+                    </a>]
+                </li>
+            </ul>
+            <p>
+                Accepted
+            </p>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+            <p>
+                Submitted
+            </p>
+            <ul>
+                <li>
+                    Y. Giga* and Y.Ueda.
+                    <i>
+                        On a diffusion equation with rupture.
+                    </i>
+                    [<a href="https://arxiv.org/abs/2308.04754">
+                        arXiv
+                    </a>]
+                </li>
+            </ul>
+            <p style="font-size:22px">
+                査読無し / Non Peer-reviewed
+            </p>
+            <ul>
+                <li>
+                    Y. Giga and Y. Ueda*.
+                    <i>
+                        Split Bregman method に基づく4階の全変動流問題に対する数値計算.
+                    </i>
+                    <a href="https://www.kurims.kyoto-u.ac.jp/ja/index.html">
+                        RIMS
+                    </a>
+                    Kôkyûroku No.2212 (2022) 26--40
+                    [<a href="https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2212.html">
+                        Kokyuroku
+                    </a>]
+                </li>
+                <li>
+                    Y.Ueda* and N.Saito.
+                    <i>
+                        Successive Projection with B-spline.
+                    </i>
+                    <a href="https://link.springer.com/book/10.1007/978-3-319-32467-8">
+                        Information Technology: New Generations
+                    </a>.
+                    Advances in Intelligent Systems and Computing,
+                    Vol. 448 (2016) 917--928
+                    [<a href="https://link.springer.com/chapter/10.1007/978-3-319-32467-8_79#citeas">
+                        Conference paper
+                    </a>]
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p class="section_title">
+                発表 / Talks
+            </p>
+            <ul>
+                <li>
+                    儀我美一, <u>上田祐暉</u>,
+                    4階全変動流問題のsplit Bregman methodに基づく数値計算,
+                    <a href="https://www2.sci.hokudai.ac.jp/dept/math/event/category/pde-seminar">
+                        偏微分方程式セミナー
+                    </a>,
+                    北海道大学, 2023年12月
+                </li>
+                <li>
+                    儀我美一, <u>上田祐暉</u>, 
+                    4階全変動流問題のsplit Bregman methodに基づく数値計算, 
+                    <a href="https://www.mathsoc.jp/section/appliedmath/CAM/2023/">
+                        2023年度応用数学合同研究集会
+                    </a>, 
+                    龍谷大学, 2023年12月
+                </li>
+                <li>
+                    Y. Giga and <u>Y. Ueda</u>, 
+                    Numerical computations of split Bregman method for fourth order total variation flow, 
+                    <a href="https://www.es.hokudai.ac.jp/symposium/2023/">
+                        The 24th RIES-HOKUDAI International Symposium
+                    </a>, 
+                    Hokkaido University, December 2023
+                </li>
+                <li>
+                    <u>上田祐暉</u>, NURBSの諸応用に対する数学解析, 
+                    <a href="https://www.jst.go.jp/kisoken/aip/result/event/math-challenge2022/index.html">
+                        JST 数学と諸分野の連携にむけた若手数学者交流会2022
+                    </a>, 
+                    オンライン, 2022年3月
+                </li>
+                <li>
+                    <u>上田祐暉</u>, NURBSの諸応用に対する数学解析, 
+                    <a href="https://www.jst.go.jp/kisoken/crest/math-rsympo2021/index.html">
+                        CREST「数理モデリング」成果報告公開シンポジウム
+                    </a>, 
+                    オンライン, 2021年9月
+                </li>
+                <li>
+                    儀我美一, <u>上田祐暉</u>, 
+                    Split Bregman method に基づく4階の全変動流問題に対する数値計算, 
+                    <a href="https://www2.kobe-u.ac.jp/~kohsaka/WS/rims_gaspde_2021.html">
+                        RIMS 共同研究 - 偏微分方程式の解の幾何学的様相
+                    </a>, 
+                    オンライン, 2021年6月
+                </li>
+                <li>
+                    Y. Giga and <u>Y. Ueda</u>, 
+                    Numerical computations of split Bregman method for fourth order total variation flow, 
+                    <a href="https://www.math.sci.hokudai.ac.jp/sympo/sapporo/program200817.html">
+                        The 45th Sapporo Symposium on Partial Differential Equations
+                    </a>, 
+                    online, August 2020.
+                </li>
+                <li>
+                    Y. Giga and <u>Y. Ueda</u>, 
+                    Numerical computations of split Bregman method for fourth order total variation flow, 
+                    Surface and Interface Dynamics, online, July 2020.
+                </li>
+                <li>
+                    <u>Y. Ueda</u> and N. Saito, 
+                    The inf-sup condition and error estimate of the Nitsche method for evolutionary diffusion-advection-reaction equations, 
+                    <a href="https://www.csrc.ac.cn/en/event/postdoctoral/2019-11-05/558.html">
+                        Beijing Computational Science Research Center
+                    </a>,
+                    Beijing, China, November 2019.
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 滝沢研二, T.E.Tezduyar, 
+                    Space-Time Computation Technique with Continuous Representation in Time (ST-C): Mathematical Analysis and Numerical Examples, 
+                    <a href="https://www.waseda.jp/inst/gcs/news/2019/10/07/826/">
+                        Workshop on Isogeometric Analysis
+                    </a>, 早稲田大学, 2019年9月
+                </li>
+                <li>
+                    <u>Y. Ueda</u> and Y. Giga, 
+                    Numerical computations of split Bregman method for fourth order total variation flow, 
+                    <a href="https://maths.whu.edu.cn/easiam2019/Home.htm">
+                        EASIAM2019
+                    </a>, 
+                    Wuhan, China, June 2019
+                </li>
+                <li>
+                    <u>Y. Ueda</u>, N. Saito, K. Takizawa and T. E. Tezduyar, 
+                    Space-Time Computation Technique with Continuous Representation in Time (ST-C): Mathematical Analysis and Numerical Examples, 
+                    Huazhong University of Science and Technology, 
+                    Wuhan, China, June 2019
+                </li>
+                <li>
+                    <u>Y. Ueda</u> and N. Saito, 
+                    The inf-sup condition and error estimate of the Nitsche method for evolutionary diffusion-advection-reaction equations, 
+                    Huazhong University of Science and Technology,
+                    Wuhan, China, June 2019
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 
+                    Isogeometric Analysisにおける$L^2$射影の$H^1$安定性について, 
+                    不連続Galerkin有限要素法の数学理論とその周辺, 
+                    福岡, 2019年2月
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 
+                    放物型問題のNitsche's methodに対するinf-sup条件および誤差評価について, 
+                    日本数学会2018年度年会, 
+                    東京大学, 2018年3月
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 
+                    放物型問題に対するNitscheの方法の応用, 
+                    不連続Galerkin有限要素法の数学理論とその周辺, 
+                    長崎, 2018年2月
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 滝沢研二, Tayfun E. Tezduyar, 
+                    ST-C-DCT法による数値計算例, 
+                    日本応用数理学会2017年度年会, 
+                    武蔵野大学有明キャンパス, 2017年9月
+                </li>
+                <li>
+                    <u>Y. Ueda</u>, N. Saito, K. Takizawa and T. E. Tezduyar, 
+                    Space-Time Computation Technique with Continuous Representation in Time (ST-C): Mathematical Analysis and Numerical Examples,
+                    <a href="http://emi.ucsd.edu/">
+                        EMI2017: 2017 Engineering Mechanics Institute Conference
+                    </a>, 
+                    San Diego, California, USA, June 2017
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 斎藤宣一, 
+                    B-splineによる時間変数近似の逐次的構成の拡張と解析, 
+                    CREST・さきがけ・数学協働プログラムの合同シンポジウム "数学パワーが世界を変える", 
+                    東京大学, 2017年2月
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 
+                    B-splineによる時間変数近似の逐次的構成の解析, 
+                    日本応用数理学会2016年度年会, 
+                    北九州国際会議場, 2016年9月
+                </li>
+                <li>
+                    <u>Y. Ueda</u> and N. Saito, 
+                    An Error Estimate of the Successive Projection Methods by B-spline, 
+                    SIAM: East Asian Section Conference 2016, University of Macau, June 2016
+                </li>
+                <li>
+                    <u>Y. Ueda</u> and N. Saito, 
+                    Successive projection with B-spline, 
+                    <a href="https://www.itng.info/OLD/2016Web/index.php">
+                        ITNG2016: 13th International Conference on Information Technology: New Generations
+                    </a>, 
+                    Las Vegas, Nevada, USA, April 2016
+                </li>
+                <li>
+                    <u>Y. Ueda</u> and N. Saito, 
+                    Analysis of successive projection with B-spline, 
+                    Second Joint Workshop of China-Japan-Korea A3 Foresight Program, 
+                    Xiamen University, China, November 2015
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 
+                    B-splineによる逐次射影法とその解析, 
+                    JST CREST-PRESTO Symposium 2015 "22世紀創造のための数学", 
+                    東京, 2015年9月
+                </li>
+                <li>
+                    <u>Y. Ueda</u> and N. Saito, 
+                    Analysis of space-time computation technique with continuous representation in time (ST-C), 
+                    ICIAM2015: The 8th International Congress on Industrial and Applied Mathematics,
+                    Beijing, China, August 2015
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 
+                    NURBSを用いた時間変数の離散化手法の解析, 
+                    日本応用数理学会2015年研究部会連合発表会, 
+                    明治大学, 2015年3月
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 
+                    B-splineに基づく高精度逐次的時間離散化法の解析, 
+                    応用数理合同研究集会, 
+                    龍谷大学, 2014年12月
+                </li>
+                <li>
+                    <u>上田祐暉</u>, 齊藤宣一, 
+                    B-splineに基づく高精度逐次的時間離散化法の解析, 
+                    日本数学会2014年度秋季総合分科会, 
+                    広島大学, 2014年9月
+                </li>
+            </ul>
+    </main>
 </body>
 
 </html>
