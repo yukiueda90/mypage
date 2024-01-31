@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuki Ueda - Personal Homepage</title>
+    <link rel="stylesheet" href="common/styles.css">
+</head>
+
+<body>
+    <!-- sidebar -->
+    <script>
+        // Fetch and inject the entire side content (including styles)
+        fetch('common/side.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('afterbegin', html);
+            })
+            .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+    <!-- main -->
+    <main>
+        <p class="page_title">
+            略歴 / Brief history
+        <p>
+        <section>
+            <p class="section_title">
+                Education
+            </p>
+            <ul>
+                <li>
+                    George R. Brown School of Engineering , Rice University, November 2016 - January 2017
+                </li>
+                <ul>
+                    <li>
+                        Host Researcher:
+                        <a href="https://www.tafsm.org/~tezduyar/">
+                            Tayfun E. Tezduyar
+                        </a>
+                    </li>
+                </ul>
+                <li>
+                    Ph.D. Mathematical Siences, The University of Tokyo, March 2018
+                </li>
+                <li>
+                    Dissertation title: "Mathematical foundation of Isogeometric Analysis for evolution problems"
+                </li>
+                <ul>
+                    <li>
+                        Advisor:
+                        <a href="http://www.infsup.jp/saito/">
+                            Norikazu Saito
+                        </a>
+                    </li>
+                </ul>
+                <li>
+                    M. Sc. Mathematical Sciences, The University of Tokyo, March 2015
+                </li>
+                <li>
+                    B.Sc Sciences, The University of Tokyo, March 2013
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p class="section_title">
+                Professional Experience
+            </p>
+            <ul>
+                <li>
+                    Project Assistant Professor,
+                    <a href="https://www.es.hokudai.ac.jp/english/">
+                        Research Institute for Electronic Science, Hokkaido University
+                    </a>,
+                    Japan
+                </li>
+                <ul>
+                    <li>
+                        October 2023 -
+                    </li>
+                </ul>
+                <li>
+                    Project Assistant Professor,
+                    <a href="https://www.ms.u-tokyo.ac.jp/">
+                        Graduate School of Mathematical Sciences, The University of Tokyo
+                    </a>,
+                    Japan
+                </li>
+                <ul>
+                    <li>
+                        June 2021 - September 2023
+                    </li>
+                </ul>
+                <li>
+                    Junior Researcher,
+                    <a href="https://www.waseda.jp/fsci/en/">
+                        Faculty of Science and Engineering, Waseda University
+                    </a>,
+                    Japan
+                </li>
+                <ul>
+                    <li>
+                        April 2020 - May 2021
+                    </li>
+
+                    <li>
+                        Host Researcher:
+                        <a href="http://www.fluid.sci.waseda.ac.jp/shibata/top.html">
+                            Yoshihiro Shibata
+                        </a>
+                    </li>
+                </ul>
+                <li>
+                    Postdoctoral Fellow,
+                    <a href="https://www.polyu.edu.hk/ama/">
+                        Department of Applied mathematics, The Hong Kong Polytechnic University
+                    </a>,
+                    Hong Kong
+                </li>
+                <ul>
+                    <li>
+                        April 2019 - March 2020
+                    </li>
+                    <li>
+                        Host Researcher:
+                        <a href="https://www.polyu.edu.hk/ama/profile/byli/">
+                            Buyang Li
+                        </a>
+                    </li>
+                </ul>
+                <li>
+                    Project Researcher,
+                    <a href="https://www.ms.u-tokyo.ac.jp/">
+                        Graduate School of Mathematical Sciences, The University of Tokyo
+                    </a>,
+                    Japan
+                </li>
+                <ul>
+                    <li>
+                        April 2018 - March 2019
+                    </li>
+                    <li>
+                        Host Researcher:
+                        <a href="https://www.ms.u-tokyo.ac.jp/~ygiga/">
+                            Yoshikazu Giga
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <p class="section_title">
+                Honors and Awards
+            </p>
+            <ul>
+                <li>
+                    Member of
+                    <a href="http://fmsp.ms.u-tokyo.ac.jp/index_e.html">
+                        Leading Graduate Course for Frontiers of Mathematical Sciences and Physics
+                    </a>
+                    (The Program for Leading Graduate Schools, MEXT, Japan)
+                </li>
+                <ul>
+                    <li>
+                        April 2015 - March 2018
+                    </li>
+                </ul>
+                <li>
+                    MS Thesis Award, The University of Tokyo, 2015
+                </li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+</html>
