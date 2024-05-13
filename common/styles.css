@@ -6,15 +6,13 @@ body {
     display: flex;
 }
 
-header {
-    background-color: #171717;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    text-align: left;
+.wrapper {
+    display:flex;
+    width:100%;
 }
 
 main {
+    flex:1;
     max-width: 1200px;
     margin: 30px;
 }
@@ -28,27 +26,21 @@ section {
 }
 
 h1 {
-    font-size: 200%;
-    color: #f5f0f0;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    margin-left: 20px;
-}
-
-h2 {
-    font-size: 260%;
+    font-size: 34px;
+    font-weight: bold;
     color: #121111;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     margin-left: 10px;
 }
 
-h3 {
-    color: #000000;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    margin-left: 20px;
-
+h2 {
+    font-size: 28px;
+    font-weight:normal;
+    color: #434141;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 p {
@@ -72,15 +64,93 @@ p {
     margin-bottom: 5px;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: #fff;
+.side {
+    max-width:300px;
+    min-width:300px;
+    background-color: #383838;
+    padding:0px;
+    padding-top:50px;
+    position:sticky;
+    top:0px;
+    height:100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    font-size: 34px;
+    color: #f5f0f0;
+    padding-left:20px;
+}
+
+nav p {
+    color:#fff;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+/* Styles for hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 800px) {
+body {
+    margin:0px;
+    padding:0;
+}
+
+.side {
+    min-width:0; /* reset min-width */
+    width: 0; /* Initially hide sidebar */
+    overflow:hidden;
+}
+
+.hamburger {
+    display:block;
+    position:fixed;
+    font-size:40px;
+    font-weight:bold;
+    color:black;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:10px;
+    padding-bottom:15px;
+}
+
+main {
+    margin-top:50px;
+    margin-left:15px;
+}
+
+    /* Show sidebar when hamburger menu is clicked */
+    .side.open {
+        min-width: 300px;
+    }
+
+    .hamburger.open {
+        color:white;
+    }
+
+    main.hidden {
+        display:none; /* hide main */
+    }
+
+
 }
 
 a, a:hover, a:visited {
     color: inherit;
+}
+
+a:hover, a:focus {
+    font-weight:bold;
 }
 
 ul li {
