@@ -9,25 +9,21 @@
 </head>
 
 <body>
+    <!-- contents -->
+    <div class="wrapper">
+
     <!-- sidebar -->
-    <script>
-        // Fetch and inject the entire side content (including styles)
-        fetch('common/side.html')
-            .then(response => response.text())
-            .then(html => {
-                document.body.insertAdjacentHTML('afterbegin', html);
-            })
-            .catch(error => console.error('Error loading sidebar:', error));
-    </script>
+    <div class="side" id="sidebar"></div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+        ☰
+    </div>
+    
     <!-- main -->
-    <main>
-        <p class="page_title">
-            略歴 / Brief history
-        <p>
+    <main role="main">
+        <h1>Brief history</h1>
         <section>
-            <p class="section_title">
-                Education
-            </p>
+            <h2>Education</h2>
             <ul>
                 <li>
                     George R. Brown School of Engineering , Rice University, November 2016 - January 2017
@@ -63,9 +59,7 @@
             </ul>
         </section>
         <section>
-            <p class="section_title">
-                Professional Experience
-            </p>
+            <h2>Professional Experience</h2>
             <ul>
                 <li>
                     Project Assistant Professor,
@@ -149,9 +143,7 @@
             </ul>
         </section>
         <section>
-            <p class="section_title">
-                Honors and Awards
-            </p>
+            <h2>Honors and Awards</h2>
             <ul>
                 <li>
                     Member of
@@ -170,8 +162,10 @@
                 </li>
             </ul>
         </section>
-
     </main>
+    </div>
 </body>
 
+<script src="./common/function_toggleSidebar.js"></script>
+<script src="./common/fetch_sidebar.js"></script>
 </html>
