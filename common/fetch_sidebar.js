@@ -1,4 +1,4 @@
-fetch('common/side.html')
+fetch('./common/side.html')
             .then(response => response.text())
             .then(html => {
                 document.querySelector("#sidebar").innerHTML = html;
