@@ -15,6 +15,7 @@ main {
     flex:1;
     max-width: 1200px;
     margin: 30px;
+    transition: 0.5s;
 }
 
 section {
@@ -57,37 +58,22 @@ p {
     margin-left: 20px;
 }
 
-.page_title {
-    font-size: 34px;
-    font-weight: bold;
-    color: #121111;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 10px;
-}
-
-.section_title {
-    font-size: 28px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .side {
     max-width:300px;
     min-width:300px;
-    background-color: #383838;
+    background-color: rgba(0,0,0,0.8);
     padding:0px;
-    padding-top:50px;
     position:sticky;
     top:0px;
     height:100vh;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
 }
 
 .name {
     font-size: 34px;
     color: #f5f0f0;
+    padding-top:50px;
     padding-left:20px;
 }
 
@@ -106,6 +92,7 @@ nav a {
 .hamburger {
     display: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 /* Media query for smaller screens */
@@ -116,9 +103,10 @@ body {
 }
 
 .side {
-    min-width:0; /* reset min-width */
-    width: 0; /* Initially hide sidebar */
-    overflow:hidden;
+    margin-left:-300px;
+    /*min-width:0; /* reset min-width */
+    /*width: 0; /* Initially hide sidebar */
+    /*overflow:hidden;*/
 }
 
 .hamburger {
@@ -140,16 +128,20 @@ main {
 
     /* Show sidebar when hamburger menu is clicked */
     .side.open {
-        min-width: 300px;
+        /*min-width: 300px;*/
+        margin-left:0px;
     }
 
     .hamburger.open {
         color:white;
     }
 
+    
     main.hidden {
-        display:none; /* hide main */
+        /*display:none;*/
+        margin-left:-285px;
     }
+    
 
 
 }
