@@ -9,28 +9,23 @@
 </head>
 
 <body>
+
+    <!-- contents -->
+    <div class="wrapper">
+
     <!-- sidebar -->
-    <script>
-        // Fetch and inject the entire side content (including styles)
-        fetch('common/side.html')
-            .then(response => response.text())
-            .then(html => {
-                document.body.insertAdjacentHTML('afterbegin', html);
-            })
-            .catch(error => console.error('Error loading sidebar:', error));
-    </script>
+    <div class="side" id="sidebar"></div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+        ☰
+    </div>
+    
     <!-- main -->
-    <main>
-        <p class="page_title">
-            Home
-        <p>
+    <main role="main">
+        <h1>Home</h1>
         <section>
-            <p class="section_title">
-                上田 祐暉
-            </p>
-            <p>
-                博士(数理科学)
-            </p>
+            <h2>上田 祐暉</h2>
+            <p>博士(数理科学)</p>
             <p>
                 <a href="http://mmc01.es.hokudai.ac.jp/msc/">
                     北海道大学 電子科学研究所 付属社会創造数学研究センター
@@ -40,39 +35,25 @@
                 </a> 
                 特任助教
             </p>
-            <p>
-                研究テーマ: 偏微分方程式の数値解析
-            </p>
-            <p>
-                キーワード: 数値解析, 偏微分方程式, NURBS, Isogeometric analysis, 全変動流
-            </p>
+            <p>研究テーマ: 偏微分方程式の数値解析</p>
+            <p>キーワード: 数値解析, 偏微分方程式, NURBS, Isogeometric analysis, 全変動流</p>
         </section>
         <section>
-            <p class="section_title">
-                (Mr.) Yuki Ueda
-            </p>
-            <p>
-                Ph.D. Mathematical Sciences
-            </p>
+            <h2>(Mr.) Yuki Ueda</h2>
+            <p>Ph.D. Mathematical Sciences</p>
             <p>
                 Project Assistant Professor, 
                 <a href="http://mmc01.es.hokudai.ac.jp/">
                     Laboratory of Mathematical Modeling
                 </a>,
-            </p>
-            <p style="margin-left:50px">
                 <a href="http://mmc01.es.hokudai.ac.jp/msc/">
                     Research Center of Mathematics for Social Creativity,
                     Research Institute for Electronic Science, 
                     Hokkaido University
                 </a>
             </p>
-            <p>
-                Research theme: numerical analysis of partial differential equations
-            </p>
-            <p>
-                Keywards: Numerical analysis, PDE, NURBS, Isogeometric analysis, total variation flow
-            </p>
+            <p>Research theme: numerical analysis of partial differential equations</p>
+            <p>Keywards: Numerical analysis, PDE, NURBS, Isogeometric analysis, total variation flow</p>
         </section>
         <p>
             e-mail: yukiueda[at]es.hokudai.ac.jp
@@ -99,6 +80,10 @@
             </a>
         </p>
     </main>
+    </div>
 </body>
+
+<script src="./common/function_toggleSidebar.js"></script>
+<script src="./common/fetch_sidebar.js"></script>
 
 </html>
