@@ -9,30 +9,24 @@
 </head>
 
 <body>
+    <!-- contents -->
+    <div class="wrapper">
+
     <!-- sidebar -->
-    <script>
-        // Fetch and inject the entire side content (including styles)
-        fetch('common/side.html')
-            .then(response => response.text())
-            .then(html => {
-                document.body.insertAdjacentHTML('afterbegin', html);
-            })
-            .catch(error => console.error('Error loading sidebar:', error));
-    </script>
+    <div class="side" id="sidebar"></div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+        ☰
+    </div>
+    
     <!-- main -->
-    <main>
-        <p class="page_title">
-            略歴 / Brief history
-        <p>
-        <p style="font-size:22px">
-            <a href="history_en.html">
-                English
-            </a>
-        </p>
+    <main role="main">
+        <h1>略歴 / Brief history</h1>
+        <h2 style="margin-left:10px">
+            <a href="history_en.html">English</a>
+        </h2>
         <section>
-            <p class="section_title">
-                学歴, 職歴
-            </p>
+            <h2>学歴, 職歴</h2>
             <ul>
                 <li>
                     2023年10月 - :
@@ -112,9 +106,7 @@
             </ul>
         </section>
         <section>
-            <p class="section_title">
-                学位
-            </p>
+            <h2>学位</h2>
             <ul>
                 <li>
                     2018年3月22日 博士(数理科学)
@@ -128,9 +120,7 @@
             </ul>
         </section>
         <section>
-            <p class="section_title">
-                Fellowship, 受賞歴
-            </p>
+            <h2>Fellowship, 受賞歴</h2>
             <ul>
                 <li>
                     2015年4月 - 2018年3月:
@@ -145,9 +135,7 @@
             </ul>
         </section>
         <section>
-            <p class="section_title">
-                プロジェクト
-            </p>
+            <h2>プロジェクト</h2>
             <ul>
                 <li>
                     2021年 - 2026年:
@@ -164,9 +152,7 @@
             </ul>
         </section>
         <section>
-            <p class="section_title">
-                教育実績
-            </p>
+            <h2>教育実績</h2>
             <ul>
                 <li>
                     数学B1(微分積分), 早稲田大学先進理工学部, 2021
@@ -178,10 +164,11 @@
                     Calculus A(2), English-based Undergraduate Program, 早稲田大学基幹理工学部, 2020
                 </li>
             </ul>
-
-
         </section>
     </main>
+    </div>
 </body>
 
+<script src="./common/function_toggleSidebar.js"></script>
+<script src="./common/fetch_sidebar.js"></script>
 </html>
