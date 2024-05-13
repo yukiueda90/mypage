@@ -9,32 +9,24 @@
 </head>
 
 <body>
-    <script>
-        // Fetch and inject the entire side content (including styles)
-        fetch('common/side.html')
-            .then(response => response.text())
-            .then(html => {
-                document.body.insertAdjacentHTML('afterbegin', html);
-            })
-            .catch(error => console.error('Error loading sidebar:', error));
-    </script>
-    <main>
-        <p class="page_title">
-            論文, 発表 / Papers, Talks
-        </p>
+    <!-- contents -->
+    <div class="wrapper">
+
+    <!-- sidebar -->
+    <div class="side" id="sidebar"></div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+        ☰
+    </div>
+    
+    <!-- main -->
+    <main role="main">
+        <h1>論文, 発表 / Papers, Talks</h1>
         <section>
-            <p class="section_title">
-                論文 / Papers
-            </p>
-            <p>
-                *: corresponsing author
-            <p>
-            <p style="font-size:22px">
-                査読付き / Peer-reviewed
-            </p>
-            <p>
-                Published
-            </p>
+            <h2>論文 / Papers</h2>
+            <p>*: corresponsing author<p>
+            <h3>査読付き / Peer-reviewed</h3>
+            <p>Published</p>
             <ul>
                 <li>
                     B. Li*, M. Shu and Y. Ueda.
@@ -131,17 +123,13 @@
                     </a>]
                 </li>
             </ul>
-            <p>
-                Accepted
-            </p>
+            <p>Accepted</p>
             <ul>
                 <li>
 
                 </li>
             </ul>
-            <p>
-                Submitted
-            </p>
+            <p>Submitted</p>
             <ul>
                 <li>
                     Y. Giga* and Y.Ueda.
@@ -153,9 +141,7 @@
                     </a>]
                 </li>
             </ul>
-            <p style="font-size:22px">
-                査読無し / Non Peer-reviewed
-            </p>
+            <h3>査読無し / Non Peer-reviewed</h3>
             <ul>
                 <li>
                     Y. Giga and Y. Ueda*.
@@ -187,9 +173,7 @@
             </ul>
         </section>
         <section>
-            <p class="section_title">
-                発表 / Talks
-            </p>
+            <h2>発表 / Talks</h2>
             <ul>
                 <li>
                     Yoshikazu Giga, <u>Yuki Ueda</u>,
@@ -394,6 +378,10 @@
                 </li>
             </ul>
     </main>
+    </div>
 </body>
+
+<script src="./common/function_toggleSidebar.js"></script>
+<script src="./common/fetch_sidebar.js"></script>
 
 </html>
