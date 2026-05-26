@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuki Ueda</title>
+    <link rel="stylesheet" href="./common/styles.css">
+    <script src="./common/import_mathjax.js"></script>
+</head>
+
+<body>
+    <!-- contents -->
+    <div class="wrapper">
+
+    <!-- sidebar -->
+    <div class="side" id="sidebar"></div>
+
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()">
+        ☰
+    </div>
+    
+    <!-- main -->
+    <main role="main">
+        <h1>講義ノート / Lecture Notes</h1>
+        <section>
+            <ul>
+                <li><a href="https://yukiueda90.github.io/LinearAlgebra1/">線形代数 I</a>: 大学 1 年生向けの線形代数. $2\times 2$ 行列の固有値, 固有ベクトルまで解説. </li> 
+                <li><a href="https://yukiueda90.github.io/DynamicalSystem/">力学系入門</a>: 常微分方程式系の基礎と数値計算手法.</li> 
+            </ul>
+        </section>
+    </main>
+    </div>
+</body>
+
+<script src="./common/function_toggleSidebar.js"></script>
+<script src="./common/fetch_sidebar.js"></script>
+</html>
